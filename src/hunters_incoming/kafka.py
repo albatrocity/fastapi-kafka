@@ -8,6 +8,7 @@ kafka_bootstrap_servers: str = os.environ.get("KAFKA_BOOTSTRAP_SERVERS")
 
 
 async def send(topic: str, msg: List):
+    print(f"Sending to Kafka: {topic} : {msg}")
     try:
         producer = AIOKafkaProducer(bootstrap_servers=kafka_bootstrap_servers)
         await producer.start()

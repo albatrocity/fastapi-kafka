@@ -4,6 +4,7 @@ services:
     build:
       context: ./src
       dockerfile: ./hunters_incoming/Dockerfile
+    working_dir: /code
     hostname: hunters_incoming
     container_name: hunters_incoming1
     depends_on:
@@ -16,7 +17,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./:/home/app
+      - ./src/hunters_incoming/:/code
     networks:
       - my-net
 
@@ -24,6 +25,7 @@ services:
     build:
       context: ./src
       dockerfile: ./alerts/Dockerfile
+    working_dir: /code
     hostname: alerts
     container_name: alerts1
     depends_on:
@@ -36,7 +38,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./:/home/app
+      - ./src/alerts:/code
     networks:
       - my-net
 
