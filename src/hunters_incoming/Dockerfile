@@ -10,7 +10,7 @@ WORKDIR /tmp
 RUN pip install poetry==1.6.1
 
 # 
-COPY ./hunters_incoming/pyproject.toml ./poetry.lock* /tmp/
+COPY ./hunters_incoming/pyproject.toml ./hunters_incoming/poetry.lock* /tmp/
 
 # 
 RUN poetry export -f requirements.txt --output requirements.txt --without-hashes

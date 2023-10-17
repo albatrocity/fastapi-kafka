@@ -12,7 +12,6 @@ uvicorn = "^0.23.2"
 pydantic = "^2.4.2"
 aiokafka = "^0.8.1"
 python-dotenv = "^1.0.0"
-kafka-python = "^2.0.2"
 
 
 [build-system]
