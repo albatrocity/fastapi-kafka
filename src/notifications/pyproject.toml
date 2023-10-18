@@ -1,17 +1,16 @@
 [tool.poetry]
-name = "hunters-incoming"
+name = "notifications"
 version = "0.1.0"
 description = ""
-authors = ["Ross Brown <ross@crema.us>"]
+authors = ["None"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = "^0.103.2"
+fastapi = "^0.104.0"
 uvicorn = "^0.23.2"
-pydantic = "^2.4.2"
-aiokafka = "^0.8.1"
 python-dotenv = "^1.0.0"
+aiokafka = "^0.8.1"
 
 
 [build-system]

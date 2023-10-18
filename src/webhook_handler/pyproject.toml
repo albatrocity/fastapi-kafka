@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "alerts"
+name = "hunters-incoming"
 version = "0.1.0"
 description = ""
 authors = ["Ross Brown <ross@crema.us>"]
